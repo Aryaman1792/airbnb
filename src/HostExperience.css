@@ -1,0 +1,118 @@
+.hostExperience {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hostExperience__hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://plus.unsplash.com/premium_photo-1664301250064-a2e3b96fa66d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFpcmJuYiUyMGhvc3QlMjBhbiUyMGV4cGVyaWVuY2V8ZW58MHx8MHx8fDA%3D');
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 60px;
+    color: white;
+    text-align: center;
+}
+
+.hostExperience__heroContent h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hostExperience__heroContent p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hostExperience__cta {
+    background: white;
+    color: #FF385C;
+    border: none;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.hostExperience__cta:hover {
+    transform: scale(1.03);
+}
+
+.hostExperience__benefits {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.hostExperience__benefits h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.hostExperience__benefitsGrid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hostExperience__benefitCard {
+    flex: 1;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.hostExperience__benefitCard:hover {
+    transform: translateY(-5px);
+}
+
+.hostExperience__howItWorks {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.hostExperience__steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.hostExperience__step {
+    flex: 1;
+    padding: 30px;
+}
+
+.stepNumber {
+    background: #FF385C;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+@media (max-width: 768px) {
+    .hostExperience__benefitsGrid,
+    .hostExperience__steps {
+        flex-direction: column;
+    }
+    
+    .hostExperience__hero h1 {
+        font-size: 36px;
+    }
+    
+    .hostExperience__hero p {
+        font-size: 18px;
+    }
+}

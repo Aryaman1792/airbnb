@@ -1,0 +1,196 @@
+
+
+  .becomeHost {
+    font-family: 'Circular', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #222222;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Hero section ka background image aur overlay */
+.becomeHost__hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('https://plus.unsplash.com/premium_photo-1663045387265-1f25b3e136db?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIxfHx8ZW58MHx8fHx8');
+    height: 70vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 24px;
+}
+
+.becomeHost__heroContent h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.becomeHost__heroContent p {
+    font-size: 22px;
+    margin-bottom: 32px;
+}
+
+.becomeHost__primaryButton {
+    background: #FF385C;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 16px;
+    transition: transform 0.2s;
+}
+
+.becomeHost__secondaryButton {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.becomeHost__primaryButton:hover,
+.becomeHost__secondaryButton:hover {
+    transform: scale(1.03);
+}
+
+.becomeHost__section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.becomeHost__section h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+/* Cards section ka layout */
+.becomeHost__cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.becomeHost__card {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.becomeHost__card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.becomeHost__card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.becomeHost__steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.becomeHost__step {
+    flex: 1;
+    min-width: 250px;
+}
+
+.stepNumber {
+    width: 48px;
+    height: 48px;
+    background: #FF385C;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 auto 24px;
+}
+
+.becomeHost__reqList {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.becomeHost__reqItem {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.becomeHost__reqItem img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.becomeHost__ctaSection {
+    padding: 80px 40px;
+    background: #F7F7F7;
+    text-align: center;
+}
+
+.becomeHost__ctaSection h2 {
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 950px) {
+    .becomeHost__cards,
+    .becomeHost__steps {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .becomeHost__card,
+    .becomeHost__step {
+      max-width: 500px;
+    }
+
+    .becomeHost__heroContent h1 {
+      font-size: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .becomeHost__heroContent h1 {
+      font-size: 36px;
+    }
+
+    .becomeHost__heroContent p {
+      font-size: 18px;
+    }
+
+    .becomeHost__primaryButton,
+    .becomeHost__secondaryButton {
+      display: block;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    .becomeHost__secondaryButton {
+      margin-right: 0;
+    }
+}

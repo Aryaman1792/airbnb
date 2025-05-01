@@ -1,3 +1,5 @@
+
+
 import React, { useState } from 'react'
 import './Banner.css'
 import { Button } from "@material-ui/core";
@@ -11,6 +13,7 @@ function Banner() {
     return (
         <div className='banner'>
             <div className='banner__search'>
+                {/* Agar showSearch true hai to Search component dikhayenge */}
                 {showSearch && <Search />}
 
                 <Button onClick={() => setShowSearch(!showSearch)} className='banner__searchButton' variant='outlined'>
@@ -22,6 +25,7 @@ function Banner() {
                 <h5>
                     Plan a different kind of getaway to uncover the hidden gems near you.
                 </h5>
+                {/* Button dabane pe user /search page pe chala jayega */}
                 <Button onClick={() => history.push('/search')} variant='outlined'>Explore Nearby</Button>
             </div>
         </div>
