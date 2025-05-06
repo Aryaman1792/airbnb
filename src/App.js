@@ -16,7 +16,6 @@ function App() {
       <Router>
         <Header />
         
-        {/* Ye routing ka part hai */}
         <Switch>
           <Route path="/search">
             <SearchPage />
@@ -38,7 +37,6 @@ function App() {
           </Route>
         </Switch>
         
-        {/* Header aur Footer sab pages pe dikhte hain */}
         <Footer />
       </Router>
     </div>
